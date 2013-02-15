@@ -1,0 +1,51 @@
+general {
+        colors = true
+        color_good = "#b7ce42"
+        color_degraded = "#f07746"
+        color_bad = "#e84f4f"
+        interval = 5
+}
+
+#order += "wireless wlan0"
+order += "ethernet eth0"
+#order += "battery 1"
+order += "time"
+order += "load"
+#wireless wlan0 {
+#        format_up = " wlan0: %ip (%quality @ %essid) "
+#        format_down = " wlan0 down "
+#}
+
+ethernet eth0 {
+        format_up = " eth0 %ip (%speed) "
+        format_down = " eth0 down "
+}
+
+#disk /home {
+#        format = " ~ %total (%free free) "
+#}
+#
+cpu_usage {
+        format = " CPU %usage "
+}
+
+#cpu_temperature 0 {
+#        format = " %degrees°C "
+#}
+#
+#battery 1 {
+#        format = " %status %percentage "
+#}
+#
+#ddate {
+#        format = " %{%a, %b %d%}, %Y " 
+#}
+#
+           time {
+                   format = "%Y-%m-%d %H:%M:%S"
+           }
+
+           load {
+                   format = "%5min"
+           }
+

@@ -1,0 +1,79 @@
+!
+! .Xdefaults
+!
+
+URxvt.scrollBar:    none
+URxvt.geometry:     80x26
+URxvt.depth: 32
+
+urxvt.transparent: 	false
+!urxvt.shading: 		10
+urxvt.background:	#222222
+urxvt.foreground:	white
+urxvt.pointerColor:	black
+urxvt.pointerColor2:	white
+urxvt.borderless:	true
+urxvt.colorMode: 	on
+urxvt.cursorBlink: 	true
+urxvt.internalBorder:	7
+
+
+! Colors
+*foreground: #F2F1F0
+*background: [95]#282828
+!black
+*color0: #666666
+*color8: #666666
+!red
+*color1: #E84F4F
+*color9: #D23D3D
+!green
+*color2: #B7CE42
+*color10: #BDE077
+!yellow
+*color3: #F07746
+*color11: #F07746
+!blue
+*color4: #66AABB
+*color12: #AACCBB
+!*color4: #74D9EE
+!*color12: #A0EAF9
+!magenta
+*color5: #B7416E
+*color13: #E16A98
+!cyan
+*color6: #6D878D
+*color14: #42717B
+!white
+*color7: #F2F1F0
+*color15: #F2F1F0
+
+URxvt*borderColor:        #282828
+URxvt*colorBD:            #ffffff
+URxvt*cursorColor:        #F07746
+
+! Urgency
+URxvt.urgentOnBell:     true
+
+! Extensions
+URxvt.perl-ext-common:  default,url-select,clipboard
+URxvt.keysym.M-u:       perl:url-select:select_next
+URxvt.keysym.M-Escape:  perl:keyboard-select:activate
+URxvt.keysym.M-s:       perl:keyboard-select:search
+URxvt.urlLauncher:      firefox
+URxvt.underlineURLs:    true
+
+! Input method
+URxvt.inputMethod:  ibus
+URxvt.preeditType:  OverTheSpot
+
+
+URxvt.transparent:   true
+URxvt.shading:       20
+
+! Fonts
+URxvt*font: -*-terminus-medium-r-normal--14-*-*-*-*-*-*-*, xft:Migu 1M:regular:size=10, xft:Droid Sans Fallback:regular:size=10
+URxvt*boldFont: -*-terminus-bold-r-normal--14-*-*-*-*-*-*-*, xft:Migu 1M:bold:size=10, xft:Droid Sans Fallback:bold:size=10
+
+! vim: set filetype=xdefaults :
+

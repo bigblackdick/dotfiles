@@ -22,7 +22,7 @@ urxvt.internalBorder:	7
 *foreground: #F2F1F0
 *background: [95]#282828
 !black
-*color0: #666666
+*color0: #282828
 *color8: #666666
 !red
 *color1: #E84F4F
@@ -34,7 +34,7 @@ urxvt.internalBorder:	7
 *color3: #F07746
 *color11: #F07746
 !blue
-*color4: #66AABB
+*color4: #2460AA
 *color12: #AACCBB
 !*color4: #74D9EE
 !*color12: #A0EAF9
@@ -42,7 +42,7 @@ urxvt.internalBorder:	7
 *color5: #B7416E
 *color13: #E16A98
 !cyan
-*color6: #6D878D
+*color6: #5DA78D
 *color14: #42717B
 !white
 *color7: #F2F1F0
@@ -56,7 +56,7 @@ URxvt*cursorColor:        #F07746
 URxvt.urgentOnBell:     true
 
 ! Extensions
-URxvt.perl-ext-common:  default,url-select,clipboard
+URxvt.perl-ext-common:  default,url-select,Clipboard
 URxvt.keysym.M-u:       perl:url-select:select_next
 URxvt.keysym.M-Escape:  perl:keyboard-select:activate
 URxvt.keysym.M-s:       perl:keyboard-select:search
@@ -72,8 +72,12 @@ URxvt.transparent:   true
 URxvt.shading:       20
 
 ! Fonts
-URxvt*font: -*-terminus-medium-r-normal--14-*-*-*-*-*-*-*, xft:Migu 1M:regular:size=10, xft:Droid Sans Fallback:regular:size=10
-URxvt*boldFont: -*-terminus-bold-r-normal--14-*-*-*-*-*-*-*, xft:Migu 1M:bold:size=10, xft:Droid Sans Fallback:bold:size=10
+#URxvt*font: -*-terminus-medium-r-normal-*-14-*-*-*-*-*-*-*, xft:Migu 1M:regular:size=10, xft:Droid Sans Fallback:regular:size=10
+URxvt*font: xft:Terminus:medium:size=14, xft:Migu 1M:regular:size=10, xft:Droid Sans Fallback:regular:size=10
+#URxvt*boldFont: -*-terminus-bold-r-normal-*-14-*-*-*-*-*-*-*, xft:Migu 1M:bold:size=10, xft:Droid Sans Fallback:bold:size=10
+URxvt*boldFont: xft:Terminus:bold:size=14, xft:Migu 1M:bold:size=10, xft:Droid Sans Fallback:bold:size=10
 
+#XTerm*termName: xterm-256color
+URxvt*termName: rxvt-unicode
 ! vim: set filetype=xdefaults :
 

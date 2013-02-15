@@ -1,3 +1,4 @@
+
 [Midnight-Commander]
 verbose=1
 pause_after_run=1
@@ -81,6 +82,8 @@ keymap=
 skin=nicedark
 filepos_max_saved_entries=1024
 
+horizontal_split=0
+
 [Layout]
 message_visible=1
 keybar_visible=1
@@ -94,6 +97,9 @@ vertical_equal=1
 left_panel_size=32
 horizontal_equal=1
 top_panel_size=1
+
+equal_split=1
+first_panel_size=79
 
 [Misc]
 timeformat_recent=%b %e %H:%M
@@ -116,6 +122,12 @@ base_color=lightgray,blue:normal=blue,default:selected=white,brightblue:marked=y
 
 
 rxvt-unicode=
+
+xterm=
+
+rxvt-unicode-256color=
+
+xterm-color=
 
 [Panels]
 show_mini_info=true

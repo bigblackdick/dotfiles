@@ -1,10 +1,11 @@
-#! perl
-#This file should be copied to /usr/lib/urxvt/perl/
+#!/usr/bin/perl
 
 sub on_sel_grab {
     my $query = $_[0]->selection;
     open (my $pipe,'| /usr/bin/xclip -in -selection clipboard') or die;
+    open (my $pipe1,'| /usr/bin/xclip -in -selection primary') or die;
     print $pipe $query;
+    print $pipe1 $query;
     close $pipe;
 }
 

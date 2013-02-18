@@ -56,6 +56,7 @@ URxvt*cursorColor:        #F07746
 URxvt.urgentOnBell:     true
 
 ! Extensions
+#URxvt.clipboard.autocopy: true
 URxvt.perl-ext-common:  default,url-select,clipboard
 URxvt.keysym.M-u:       perl:url-select:select_next
 URxvt.keysym.M-Escape:  perl:keyboard-select:activate
@@ -73,9 +74,11 @@ URxvt.shading:       20
 
 ! Fonts
 #URxvt*font: -*-terminus-medium-r-normal-*-12-*-*-*-*-*-*-*, xft:Migu 1M:regular:size=10, xft:Droid Sans Fallback:regular:size=10
-URxvt*font: xft:Terminus:medium:size=14, xft:Migu 1M:regular:size=10, xft:Droid Sans Fallback:regular:size=10
+#URxvt*font: xft:Terminus:medium:size=14, xft:Migu 1M:regular:size=10, xft:Droid Sans Fallback:regular:size=10
+URxvt*font:  xft:DejaVu sans mono:size=11, xft:Terminus:medium:size=14, xft:Migu 1M:regular:size=10, xft:Droid Sans Fallback:regular:size=10
 #URxvt*boldFont: -*-terminus-bold-r-normal-*-12-*-*-*-*-*-*-*, xft:Migu 1M:bold:size=10, xft:Droid Sans Fallback:bold:size=10
-URxvt*boldFont: xft:Terminus:bold:size=14, xft:Migu 1M:bold:size=10, xft:Droid Sans Fallback:bold:size=10
+#URxvt*boldFont: xft:Terminus:bold:size=14, xft:Migu 1M:bold:size=10, xft:Droid Sans Fallback:bold:size=10
+URxvt*boldFont: xft:DejaVu sans mono:size=11, xft:Terminus:bold:size=14, xft:Migu 1M:bold:size=10, xft:Droid Sans Fallback:bold:size=10
 
 #XTerm*termName: xterm-256color
 URxvt*termName: rxvt-unicode

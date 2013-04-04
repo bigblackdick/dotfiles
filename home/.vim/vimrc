@@ -229,3 +229,8 @@ endif
 "Move around wrapped lines
 ":nmap j gj
 ":nmap k gk
+
+
+"Toggle NERDTree
+:nmap \e :NERDTreeToggle<CR>
+

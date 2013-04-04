@@ -6,8 +6,8 @@ URxvt.scrollBar:    none
 URxvt.geometry:     80x26
 URxvt.depth: 32
 
-urxvt.transparent: 	false
-!urxvt.shading: 		10
+urxvt.transparent: 	true
+urxvt.shading: 		10
 urxvt.background:	#222222
 urxvt.foreground:	white
 urxvt.pointerColor:	black

@@ -1,5 +1,5 @@
 general {
-	output_format = "none"
+	output_format = "i3bar"
         colors = true
         color_good = "#b7ce42"
         color_degraded = "#f07746"
@@ -8,7 +8,11 @@ general {
 }
 
 #order += "wireless wlan0"
-order += "ethernet eth0"
+order += "taskwarrior"
+order += "static_string"
+order += "ethernet eth5"
+order += "ethernet tun0"
+order += "volume master"
 #order += "battery 1"
 order += "time"
 order += "load"
@@ -17,10 +21,19 @@ order += "load"
 #        format_down = " wlan0 down "
 #}
 
-#ethernet eth5 {
-#        format_up = " eth0 %ip (%speed) "
-#        format_down = " eth0 down "
-#}
+static_string {
+	format = "     "
+}
+	
+ethernet eth0 {
+#        format_up = " eth5 %ip (%speed) "
+        format_up = ""
+        format_down = " eth5 down "
+}
+ethernet tun0 {
+	format_up = "%ip"
+	format_down = " tun0 down "
+}
 
 #disk /home {
 #        format = " ~ %total (%free free) "
@@ -43,9 +56,16 @@ cpu_usage {
 #}
 #
            time {
-                   format = "%Y-%m-%d %H:%M:%S"
+                   format = "%H:%M"
            }
 
            load {
                    format = "%5min"
            }
+
+#volume master {
+#	format = "V: %volume"
+#	device = "default"
+#	mixer = "Master"
+#	mixer_idx = 0 
+#}

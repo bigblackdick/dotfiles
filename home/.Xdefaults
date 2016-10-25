@@ -6,7 +6,7 @@ URxvt.scrollBar:    none
 URxvt.geometry:     80x26
 URxvt.depth: 32
 
-urxvt.transparent: 	true
+#urxvt.transparent: 	true
 urxvt.shading: 		10
 urxvt.background:	#222222
 urxvt.foreground:	white
@@ -16,6 +16,53 @@ urxvt.borderless:	true
 urxvt.colorMode: 	on
 urxvt.cursorBlink: 	true
 urxvt.internalBorder:	7
+
+xterm*dynamicColors: 	true
+urxvt*dynamicColors: 	on
+
+
+!  !!Solarized try
+!  *background: #002b36
+!  *foreground: #657b83
+!  !!*fading: 40
+!  *fadeColor: #002b36
+!  *cursorColor: #93a1a1
+!  *pointerColorBackground: #586e75
+!  *pointerColorForeground: #93a1a1
+!   
+!  !! black dark/light
+!  *color0: #073642
+!  *color8: #002b36
+!  
+!  !! red dark/light
+!  *color1: #dc322f
+!  *color9: #cb4b16
+!  
+!  !! green dark/light
+!  *color2: #859900
+!  *color10: #586e75
+!  
+!  !! yellow dark/light
+!  *color3: #b58900
+!  *color11: #657b83
+!  
+!  !! blue dark/light
+!  *color4: #268bd2
+!  *color12: #839496
+!  
+!  !! magenta dark/light
+!  *color5: #d33682
+!  *color13: #6c71c4
+!  
+!  !! cyan dark/light
+!  *color6: #2aa198
+!  *color14: #93a1a1
+!  
+!  !! white dark/light
+!  *color7: #eee8d5
+!  *color15: #fdf6e3
+
+
 
 
 ! Colors
@@ -56,7 +103,7 @@ URxvt*cursorColor:        #F07746
 URxvt.urgentOnBell:     true
 
 ! Extensions
-#URxvt.clipboard.autocopy: true
+URxvt.clipboard.autocopy: true
 URxvt.perl-ext-common:  default,url-select,clipboard
 URxvt.keysym.M-u:       perl:url-select:select_next
 URxvt.keysym.M-Escape:  perl:keyboard-select:activate
@@ -81,6 +128,6 @@ URxvt*font:  xft:DejaVu sans mono:size=11, xft:Terminus:medium:size=14, xft:Migu
 URxvt*boldFont: xft:DejaVu sans mono:size=11, xft:Terminus:bold:size=14, xft:Migu 1M:bold:size=10, xft:Droid Sans Fallback:bold:size=10
 
 #XTerm*termName: xterm-256color
-URxvt*termName: rxvt-unicode
+URxvt*termName: rxvt
 ! vim: set filetype=xdefaults :
 

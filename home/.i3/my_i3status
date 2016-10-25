@@ -4,7 +4,7 @@
 i3status --config ~/.i3/i3status | while :
 do
         read line
-        weather="$(cat /home/test/.i3/weather)"
+        weather="$(cat ~/.i3/weather)"
         echo "$line|$weather" || exit 1
 done
 
